@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/chat.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Poppins&family=Montserrat&family=Josefin+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title>Chat</title>
+</head>
+
+<body>
+    <div class="title">
+        <h2>Instant <span>Messenger</span> <i class="fa fa-commenting-o" aria-hidden="true"></i></h2>
+    </div>
+
+    <div class="group_title">
+    </div>
+
+    <!-- Group Members -->
+    <div class="members">
+        <div class="show">Participants</div>
+        <ul id="list">
+            <!-- List will be dependent on javascript ! -->
+            <!-- <li>Aditya <i class="fa fa-circle" aria-hidden="true"></i></li>
+            <li>Joe <i class="fa fa-circle" aria-hidden="true"></i></li>
+            <li>John <i class="fa fa-circle" aria-hidden="true"></i></li>
+            <li>Doe <i class="fa fa-circle" aria-hidden="true"></i></li> -->
+        </ul>
+    </div>
+
+    <div class="chat_container">
+        <div class="cont">
+            <!-- Messages will be appeared with the help of javascript ! -->
+        </div>
+    </div>
+
+
+    <div class="input_cont">
+        <input type="text" id="text" placeholder="Type a message..." autocomplete="off">
+        <button id="send_button">Send</button>
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.3/socket.io.js"
+    integrity="sha512-Jr0UIR/Q8MUX+93zjDOhuDUKLqJZObtwpkLJQcR9qMaLgL0thet39IORuavUaZFkZ8a4ktrUsKPM9mf5LWMduA=="
+    crossorigin="anonymous"></script>
+<script src="js/socket.js"></script>
+
+</html>

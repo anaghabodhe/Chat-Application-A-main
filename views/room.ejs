@@ -1,0 +1,89 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Room</title>
+</head>
+
+<body>
+    <form action="/chat" method="GET">
+        <input type="text" name="title" placeholder="Room Title" autocomplete="off">
+        <input type="text" id="unique_id" name="id" readonly>
+        <button>Create Room</button>
+    </form>
+</body>
+<script src="/js/generateid.js"></script>
+<script>
+    // Get url parameters
+    const url_string = window.location.href;
+    console.log(url_string);
+</script>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Poppins&family=Montserrat&family=Quicksand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/room.css">
+    <title>Create Room</title>
+</head>
+<style>
+    .roomPage {
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/chat.jpg");
+        background-size: cover ;
+        background-repeat:no-repeat;
+        min-height: 100vh;
+    
+    }
+
+    .copy_notify {
+        margin: 2%;
+        color: #f5f5f5;
+        font-family: 'Poppins', cursive;
+        transition: all .5s;
+        display: none;
+    }
+</style>
+
+<body>
+    <div class="roomPage">
+        <form action="/chat" method="GET">
+            <div class="container">
+                <div class="form">
+                    <h2>Create Room <i class="fa fa-comment-o" aria-hidden="true"></i></h2>
+                    <div class="name">
+                        <input type="text" id="group_name" name="title" placeholder="Room Title" autocomplete="off">
+                    </div>
+                    <div class="id">
+                        <input type="text" id="unique_id" name="id" readonly>
+                    </div>
+
+                    <div class="btn">
+                        <button>Create</button>
+                    </div>
+        </form>
+    </div>
+    <!-- Link production ! -->
+    <input type="text" id="url" readonly>
+
+
+    <div class="copy_notify">
+        <h2>Copied !</h2>
+    </div>
+
+</body>
+<script src="/js/generateid.js"></script>
+
+</html>
